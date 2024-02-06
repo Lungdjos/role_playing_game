@@ -11,7 +11,7 @@ let gold = 50;
 let currentWeapon = 0;
 let fighting;
 let monsterHealth;
-let inventory = ['stick'];
-
-// query selectors
-let button1 = document.querySelector('#button1');
+let inventory = [`
+stick `, `
+dagger `, `
+sword `];

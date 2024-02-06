@@ -14,4 +14,4 @@ let monsterHealth;
 let inventory = ['stick'];
 
 // query selectors
-let button1 = document.querySelector('#button1');
+let
