@@ -76,6 +76,6 @@ function update(location) {
 
     // initializing the buttons on the next page
     button1.onclick = location['button functions'][0];
-    button2.onclick = location['button functions'][1];
-    button3.onclick = location['button functions'][2];
+    button2.onclick = location['button functions'][0];
+    button3.onclick = goTown;
 }

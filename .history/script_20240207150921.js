@@ -71,11 +71,11 @@ function update(location) {
     // changing the text of elements
     button1.innerText = location['button text'][0];
     button2.innerText = location['button text'][1];
-    button3.innerText = location['button text'][2];
-    text.innerText = location['text'];
+    button3.innerText = location['button text'][0];
+    text.innerText = 'You enter the store.';
 
     // initializing the buttons on the next page
-    button1.onclick = location['button functions'][0];
-    button2.onclick = location['button functions'][1];
-    button3.onclick = location['button functions'][2];
+    button1.onclick = buyHealth;
+    button2.onclick = buyWeapon;
+    button3.onclick = goTown;
 }

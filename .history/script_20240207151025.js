@@ -75,7 +75,7 @@ function update(location) {
     text.innerText = location['text'];
 
     // initializing the buttons on the next page
-    button1.onclick = location['button functions'][0];
-    button2.onclick = location['button functions'][1];
-    button3.onclick = location['button functions'][2];
+    button1.onclick = location['button functions'][];
+    button2.onclick = buyWeapon;
+    button3.onclick = goTown;
 }

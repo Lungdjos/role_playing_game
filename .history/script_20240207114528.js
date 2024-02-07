@@ -13,7 +13,7 @@ let fighting;
 let monsterHealth;
 let inventory = ['stick'];
 
-// constants
+// query selectors for constants
 const button1 = document.querySelector('#button1');
 const button2 = document.querySelector('#button2');
 const button3 = document.querySelector('#button3');
@@ -24,17 +24,6 @@ const xpText = document.querySelector('#xpText');
 const healthText = document.querySelector('#healthText');
 const goldText = document.querySelector('#goldText');
 const monsterHealthText = document.querySelector('#monsterHealth');
-const locations = [{
-    name: "town square",
-    "button text": ['Go to store', 'Go to cave', 'Fight dragon'],
-    "button functions": [goStore, goCave, fightDragon],
-    text: "You are in the town square. You see a sign that says \"Store\"."
-}, {
-    name: "store",
-    "button text": ['Buy 10 health (10 gold)', 'Buy weapon (30 gold)', 'Go to town square'],
-    "button functions": [buyHealth, buyWeapon, goTown],
-    text: "You enter the store."
-}];
 
 // initialize buttons
 button1.onclick = goStore;
@@ -45,7 +34,17 @@ button3.onclick = fightDragon;
 
 // go to store - and store following methods
 function goStore() {
-    update(locations[1]);
+    // changing the text of elements
+    button1.innerText = 'Buy 10 health (10 gold)';
+    button2.innerText = 'Buy weapon (30 gold)';
+    button3.innerText = 'Go to town square';
+    text.innerText = 'You enter the store.';
+
+    // initializing the buttons on the next page
+    button1.onclick = buyHealth;
+    button2.onclick = buyWeapon;
+    button3.onclick = goTown;
+
 }
 // buying health
 function buyHealth() {}
@@ -53,7 +52,16 @@ function buyHealth() {}
 function buyWeapon() {}
 // going to town square
 function goTown() {
-    update(locations[0]);
+    // changing the text of elements
+    button1.innerText = 'Go to store';
+    button2.innerText = 'Go to cave';
+    button3.innerText = 'Fight dragon';
+    text.innerText = 'You are in town. You see a sign that says Store';
+
+    // initializing the buttons on the next page
+    button1.onclick = buyHealth;
+    button2.onclick = buyWeapon;
+    button3.onclick = goTown;
 }
 
 // go to cave
@@ -64,18 +72,4 @@ function goCave() {
 // fighting the dragon
 function fightDragon() {
     console.log('Fighting draon.');
-}
-
-// update method
-function update(location) {
-    // changing the text of elements
-    button1.innerText = location['button text'][0];
-    button2.innerText = location['button text'][1];
-    button3.innerText = location['button text'][2];
-    text.innerText = location['text'];
-
-    // initializing the buttons on the next page
-    button1.onclick = location['button functions'][0];
-    button2.onclick = location['button functions'][1];
-    button3.onclick = location['button functions'][2];
 }
