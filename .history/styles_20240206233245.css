@@ -21,16 +21,5 @@ body {
     color: #fff;
     max-width: 500px;
     max-height: 400px;
-    margin: 30px auto 0 auto;
-    padding: 10px;
-}
-
-
-/* stats and controls styling */
-
-#controls,
-#stats {
-    border: 1px solid #0a0a23;
-    color: #0a0a23;
-    padding: 5px;
+    margin: ;
 }
