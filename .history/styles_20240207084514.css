@@ -35,11 +35,7 @@ body {
     padding: 5px;
 }
 
-.stat {
-    padding-right: 10px;
-}
-
-
+.stat
 /* monster stats styling */
 
 #monsterStats {
@@ -48,15 +44,4 @@ body {
     color: #fff;
     background-color: #c70d0d;
     display: none;
-}
-
-
-/* styling for buttons */
-
-button {
-    cursor: pointer;
-    color: #0a0a23;
-    background-color: #feac32;
-    border: 3px solid #feac32;
-    background-image: linear-gradient(#fecc4c, #ffac33);
 }

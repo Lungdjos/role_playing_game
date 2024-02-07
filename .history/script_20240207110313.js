@@ -34,7 +34,7 @@ button3.onclick = fightDragon;
 
 // go to store
 function goStore() {
-    button1.innerText = 'Buy 10 health (10 gold)';
+    button1.innerText = 'Buy 10 health'
 }
 
 // go to cave

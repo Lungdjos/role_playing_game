@@ -21,28 +21,5 @@ const text = document.querySelector('#text');
 const monsterStats = document.querySelector('#monsterStats');
 const monsterName = document.querySelector('#monsterName');
 const xpText = document.querySelector('#xpText');
-const healthText = document.querySelector('#healthText');
-const goldText = document.querySelector('#goldText');
-const monsterHealthText = document.querySelector('#monsterHealth');
-
-// initialize buttons
-button1.onclick = goStore;
-button2.onclick = goCave;
-button3.onclick = fightDragon;
-
-// funtions and methods
-
-// go to store
-function goStore() {
-    button1.innerText = 'Buy 10 health (10 gold)';
-}
-
-// go to cave
-function goCave() {
-    console.log('Going to cave.');
-}
-
-// fighting the dragon
-function fightDragon() {
-    console.log('Fighting draon.');
-}
+const healthT = document.querySelector('#xpText');
+const xpText = document.querySelector('#xpText');
