@@ -24,7 +24,7 @@ const xpText = document.querySelector('#xpText');
 const healthText = document.querySelector('#healthText');
 const goldText = document.querySelector('#goldText');
 const monsterHealthText = document.querySelector('#monsterHealth');
-// array
+//ar
 const locations = [{
     name: "town square",
     "button text": ['Go to store', 'Go to cave', 'Fight dragon'],
@@ -55,15 +55,9 @@ function goStore() {
 }
 // buying health
 function buyHealth() {
-    if (gold >= 10) {
-        gold: gold = gold - 10;
-        // health
-        health: health += 10;
-
-        // updating the values on the UI
-        goldText.innerText = gold;
-        healthText.innerText = health;
-    }
+    gold: gold = gold - 10;
+    // health
+    health: health += 10;
 }
 // buying weapon
 function buyWeapon() {}

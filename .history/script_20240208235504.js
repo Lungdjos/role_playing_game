@@ -55,15 +55,9 @@ function goStore() {
 }
 // buying health
 function buyHealth() {
-    if (gold >= 10) {
-        gold: gold = gold - 10;
-        // health
-        health: health += 10;
-
-        // updating the values on the UI
-        goldText.innerText = gold;
-        healthText.innerText = health;
-    }
+    gold: gold = gold - 10;
+    // health
+    health: health += 10;
 }
 // buying weapon
 function buyWeapon() {}

@@ -55,57 +55,57 @@ function goStore() {
 }
 // buying health
 function buyHealth() {
-    if (gold >= 10) {
-        gold: gold = gold - 10;
-        // health
-        health: health += 10;
+    if ({
+            gold: gold = gold - 10;
+            // health
+            health: health += 10;
 
-        // updating the values on the UI
-        goldText.innerText = gold;
-        healthText.innerText = health;
+            // updating the values on the UI
+            goldText.innerText = gold;
+            healthText.innerText = health;
+        }
     }
-}
-// buying weapon
-function buyWeapon() {}
-// going to town square
-function goTown() {
-    update(locations[0]);
-}
+    // buying weapon
+    function buyWeapon() {}
+    // going to town square
+    function goTown() {
+        update(locations[0]);
+    }
 
-// go to cave
-function goCave() {
-    update(locations[2]);
-}
+    // go to cave
+    function goCave() {
+        update(locations[2]);
+    }
 
-// fighting the dragon
-function fightDragon() {
-    console.log('Fighting draon.');
-}
+    // fighting the dragon
+    function fightDragon() {
+        console.log('Fighting draon.');
+    }
 
-/**
- * update method
- * @param {*} location 
- */
+    /**
+     * update method
+     * @param {*} location 
+     */
 
-function update(location) {
-    // changing the text of elements
-    button1.innerText = location['button text'][0];
-    button2.innerText = location['button text'][1];
-    button3.innerText = location['button text'][2];
-    text.innerText = location['text']; //or location.text
+    function update(location) {
+        // changing the text of elements
+        button1.innerText = location['button text'][0];
+        button2.innerText = location['button text'][1];
+        button3.innerText = location['button text'][2];
+        text.innerText = location['text']; //or location.text
 
-    // initializing the buttons on the next page
-    button1.onclick = location['button functions'][0];
-    button2.onclick = location['button functions'][1];
-    button3.onclick = location['button functions'][2];
-}
+        // initializing the buttons on the next page
+        button1.onclick = location['button functions'][0];
+        button2.onclick = location['button functions'][1];
+        button3.onclick = location['button functions'][2];
+    }
 
-// fight slime method
-function fightSlime() {
+    // fight slime method
+    function fightSlime() {
 
-}
+    }
 
-// fight beast method
-function fightBeast() {
+    // fight beast method
+    function fightBeast() {
 
-}
+    }

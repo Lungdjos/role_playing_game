@@ -55,7 +55,7 @@ function goStore() {
 }
 // buying health
 function buyHealth() {
-    if (gold >= 10) {
+    if (gold) {
         gold: gold = gold - 10;
         // health
         health: health += 10;
