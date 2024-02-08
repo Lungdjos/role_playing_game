@@ -34,11 +34,6 @@ const locations = [{
     "button text": ['Buy 10 health (10 gold)', 'Buy weapon (30 gold)', 'Go to town square'],
     "button functions": [buyHealth, buyWeapon, goTown],
     text: "You enter the store."
-}, {
-    name: "cave",
-    "button text": ['Fight slime', 'Fight fanged beast', 'Go to town square'],
-    "button functions": [fightSlime, fightBeast, goTown],
-    text: "You enter the cave. You see some monsters."
 }];
 
 // initialize buttons
@@ -95,6 +90,4 @@ function fightSlime() {
 }
 
 // fight beast method
-function fightBeast() {
-
-}
+fun

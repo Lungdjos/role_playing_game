@@ -34,11 +34,6 @@ const locations = [{
     "button text": ['Buy 10 health (10 gold)', 'Buy weapon (30 gold)', 'Go to town square'],
     "button functions": [buyHealth, buyWeapon, goTown],
     text: "You enter the store."
-}, {
-    name: "cave",
-    "button text": ['Fight slime', 'Fight fanged beast', 'Go to town square'],
-    "button functions": [fightSlime, fightBeast, goTown],
-    text: "You enter the cave. You see some monsters."
 }];
 
 // initialize buttons
@@ -71,30 +66,16 @@ function fightDragon() {
     console.log('Fighting draon.');
 }
 
-/**
- * update method
- * @param {*} location 
- */
-
+// update method
 function update(location) {
     // changing the text of elements
     button1.innerText = location['button text'][0];
     button2.innerText = location['button text'][1];
     button3.innerText = location['button text'][2];
-    text.innerText = location['text']; //or location.text
+    text.innerText = location['text']; //or 
 
     // initializing the buttons on the next page
     button1.onclick = location['button functions'][0];
     button2.onclick = location['button functions'][1];
     button3.onclick = location['button functions'][2];
-}
-
-// fight slime method
-function fightSlime() {
-
-}
-
-// fight beast method
-function fightBeast() {
-
 }
