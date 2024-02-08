@@ -63,7 +63,7 @@ function goTown() {
 
 // go to cave
 function goCave() {
-    update(locations[2]);
+    up
 }
 
 // fighting the dragon
