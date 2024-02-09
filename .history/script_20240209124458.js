@@ -83,9 +83,7 @@ function buyHealth() {
 }
 // buying weapon
 function buyWeapon() {
-    // checking if the player has space for a weapon
-    if (currentWeapon < (weapons.length - 1)) {
-        // checking if the player has enough gold.
+    {
         if (gold >= 30) {
             gold -= 30;
             currentWeapon++;
@@ -101,13 +99,6 @@ function buyWeapon() {
         } else {
             text.innerText = 'You do not have enough gold to buy a weapon.';
         }
-    } else {
-        text.innerText = 'You already have the most powerful weapon.';
-
-        // selling a weapon
-        button2.innerText = 'Sell weapon for 15 gold';
-
-        button2.onclick = sellWeapon;
     }
 }
 // going to town square

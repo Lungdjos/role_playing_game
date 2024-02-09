@@ -103,11 +103,9 @@ function buyWeapon() {
         }
     } else {
         text.innerText = 'You already have the most powerful weapon.';
-
-        // selling a weapon
         button2.innerText = 'Sell weapon for 15 gold';
 
-        button2.onclick = sellWeapon;
+        bu
     }
 }
 // going to town square

@@ -101,14 +101,7 @@ function buyWeapon() {
         } else {
             text.innerText = 'You do not have enough gold to buy a weapon.';
         }
-    } else {
-        text.innerText = 'You already have the most powerful weapon.';
-
-        // selling a weapon
-        button2.innerText = 'Sell weapon for 15 gold';
-
-        button2.onclick = sellWeapon;
-    }
+    } else {}
 }
 // going to town square
 function goTown() {

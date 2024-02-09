@@ -28,15 +28,8 @@ const weapons = [{
     name: 'stick',
     power: 5
 }, {
-    name: 'dagger',
-    power: 30
-}, {
-    name: 'claw hammer',
-    power: 50
-}, {
-    name: 'sword',
-    power: 100
-}];
+
+}, {}, {}];
 // array
 const locations = [{
     name: "town square",
@@ -82,34 +75,7 @@ function buyHealth() {
     }
 }
 // buying weapon
-function buyWeapon() {
-    // checking if the player has space for a weapon
-    if (currentWeapon < (weapons.length - 1)) {
-        // checking if the player has enough gold.
-        if (gold >= 30) {
-            gold -= 30;
-            currentWeapon++;
-            // updating the texts
-            goldText.innerText = gold;
-            let newWeapon = weapons[currentWeapon].name;
-            text.innerText = 'You now have a ' + newWeapon + '.';
-
-            // adding to the inventory
-            inventory.push(newWeapon);
-
-            text.innerText += ' In your inventory you now have: ' + inventory;
-        } else {
-            text.innerText = 'You do not have enough gold to buy a weapon.';
-        }
-    } else {
-        text.innerText = 'You already have the most powerful weapon.';
-
-        // selling a weapon
-        button2.innerText = 'Sell weapon for 15 gold';
-
-        button2.onclick = sellWeapon;
-    }
-}
+function buyWeapon() {}
 // going to town square
 function goTown() {
     update(locations[0]);
