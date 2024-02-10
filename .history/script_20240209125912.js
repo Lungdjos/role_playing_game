@@ -113,19 +113,10 @@ function buyWeapon() {
 
 // sell weapon
 function sellWeapon() {
-    if (inventory.length > 1) {
-        // updating the gold
-        gold += 15;
-        goldText.innerText = gold;
+    if (weapons.) {
 
-        // removing the weapon from inventory
-        let currentWeapon = inventory.shift();
-
-        text.innerText = 'You sold a ' + currentWeapon + '.';
-
-        text.innerText += ' In your inventory you have: ' + inventory + '.';
     } else {
-        text.innerText = 'Don\'t sell your only weapon!';
+
     }
 }
 // going to town square
