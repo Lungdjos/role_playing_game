@@ -186,10 +186,3 @@ function goFight() {
 }
 
 // attack method and dodge methods
-function attack() {
-
-}
-
-function dodge() {
-
-}

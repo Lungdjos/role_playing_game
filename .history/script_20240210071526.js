@@ -24,7 +24,6 @@ const xpText = document.querySelector('#xpText');
 const healthText = document.querySelector('#healthText');
 const goldText = document.querySelector('#goldText');
 const monsterHealthText = document.querySelector('#monsterHealth');
-
 // arrays and objects
 const weapons = [{
     name: 'stick',
@@ -39,11 +38,7 @@ const weapons = [{
     name: 'sword',
     power: 100
 }];
-const monsters = [
-    { name: 'slime', level: 2, health: 15 },
-    { name: 'fanged beast', level: 8, health: 60 },
-    { name: 'dragon', level: 20, health: 300 }
-];
+// array
 const locations = [{
     name: "town square",
     "button text": ['Go to store', 'Go to cave', 'Fight dragon'],
@@ -144,6 +139,11 @@ function goCave() {
     update(locations[2]);
 }
 
+// fighting the dragon
+function fightDragon() {
+    console.log('Fighting draon.');
+}
+
 /**
  * update method
  * @param {*} location 
@@ -162,34 +162,12 @@ function update(location) {
     button3.onclick = location['button functions'][2];
 }
 
-
 // fight slime method
 function fightSlime() {
-    fighting = 0;
-    goFight()
+
 }
 
 // fight beast method
 function fightBeast() {
-    fighting = 1;
-    goFight();
-}
-
-// fighting the dragon
-function fightDragon() {
-    fighting = 2;
-    goFight();
-}
-// method to manage fighting the monsters
-function goFight() {
-
-}
-
-// attack method and dodge methods
-function attack() {
-
-}
-
-function dodge() {
 
 }

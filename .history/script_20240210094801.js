@@ -162,6 +162,10 @@ function update(location) {
     button3.onclick = location['button functions'][2];
 }
 
+// fighting the dragon
+function fightDragon() {
+    console.log('Fighting draon.');
+}
 
 // fight slime method
 function fightSlime() {
@@ -171,25 +175,11 @@ function fightSlime() {
 
 // fight beast method
 function fightBeast() {
-    fighting = 1;
+    fighting = 0;
     goFight();
 }
 
-// fighting the dragon
-function fightDragon() {
-    fighting = 2;
-    goFight();
-}
 // method to manage fighting the monsters
 function goFight() {
-
-}
-
-// attack method and dodge methods
-function attack() {
-
-}
-
-function dodge() {
 
 }

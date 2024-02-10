@@ -40,9 +40,9 @@ const weapons = [{
     power: 100
 }];
 const monsters = [
-    { name: 'slime', level: 2, health: 15 },
-    { name: 'fanged beast', level: 8, health: 60 },
-    { name: 'dragon', level: 20, health: 300 }
+    { name: 'slim', health: '', level: '' },
+    { name: '', health: '', level: '' },
+    { name: '', health: '', level: '' }
 ];
 const locations = [{
     name: "town square",
@@ -162,34 +162,17 @@ function update(location) {
     button3.onclick = location['button functions'][2];
 }
 
+// fighting the dragon
+function fightDragon() {
+    console.log('Fighting draon.');
+}
 
 // fight slime method
 function fightSlime() {
-    fighting = 0;
-    goFight()
+
 }
 
 // fight beast method
 function fightBeast() {
-    fighting = 1;
-    goFight();
-}
-
-// fighting the dragon
-function fightDragon() {
-    fighting = 2;
-    goFight();
-}
-// method to manage fighting the monsters
-function goFight() {
-
-}
-
-// attack method and dodge methods
-function attack() {
-
-}
-
-function dodge() {
 
 }

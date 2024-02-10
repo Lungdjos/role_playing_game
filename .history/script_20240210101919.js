@@ -190,6 +190,6 @@ function attack() {
 
 }
 
-function dodge() {
+function name(params) {
 
 }
