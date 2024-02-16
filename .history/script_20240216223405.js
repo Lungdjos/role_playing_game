@@ -196,12 +196,8 @@ function goFight() {
     update(locations[3]);
     monsterHealth = monsters[fighting].health;
 
-    // changing the css styles in js
+    // changing h
     monsterStats.style.display = 'block';
-
-    // lendering text to the page
-    monsterName.innerText = monsters[fighting].name;
-    monsterHealthText.innerText = monsterHealth;
 }
 
 // attack method and dodge methods

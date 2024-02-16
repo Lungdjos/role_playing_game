@@ -195,13 +195,7 @@ function fightDragon() {
 function goFight() {
     update(locations[3]);
     monsterHealth = monsters[fighting].health;
-
-    // changing the css styles in js
-    monsterStats.style.display = 'block';
-
-    // lendering text to the page
-    monsterName.innerText = monsters[fighting].name;
-    monsterHealthText.innerText = monsterHealth;
+    monsterStats.computedStyleMap.display
 }
 
 // attack method and dodge methods

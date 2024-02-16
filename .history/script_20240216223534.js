@@ -201,7 +201,7 @@ function goFight() {
 
     // lendering text to the page
     monsterName.innerText = monsters[fighting].name;
-    monsterHealthText.innerText = monsterHealth;
+    monsterHealthText
 }
 
 // attack method and dodge methods

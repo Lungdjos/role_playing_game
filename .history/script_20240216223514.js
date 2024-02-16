@@ -200,8 +200,7 @@ function goFight() {
     monsterStats.style.display = 'block';
 
     // lendering text to the page
-    monsterName.innerText = monsters[fighting].name;
-    monsterHealthText.innerText = monsterHealth;
+    monsterName.innerText = mo
 }
 
 // attack method and dodge methods
