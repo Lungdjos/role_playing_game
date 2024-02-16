@@ -193,7 +193,7 @@ function fightDragon() {
 }
 // method to manage fighting the monsters
 function goFight() {
-    update(locations[3]);
+    update(locations[3])
 }
 
 // attack method and dodge methods

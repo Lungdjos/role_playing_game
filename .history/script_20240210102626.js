@@ -26,8 +26,6 @@ const goldText = document.querySelector('#goldText');
 const monsterHealthText = document.querySelector('#monsterHealth');
 
 // arrays and objects
-
-// array of weapons
 const weapons = [{
     name: 'stick',
     power: 5
@@ -41,8 +39,6 @@ const weapons = [{
     name: 'sword',
     power: 100
 }];
-
-// array of monsters
 const monsters = [
     { name: 'slime', level: 2, health: 15 },
     { name: 'fanged beast', level: 8, health: 60 },
@@ -193,7 +189,7 @@ function fightDragon() {
 }
 // method to manage fighting the monsters
 function goFight() {
-    update(locations[3]);
+
 }
 
 // attack method and dodge methods
