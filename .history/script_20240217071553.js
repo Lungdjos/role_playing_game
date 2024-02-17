@@ -216,9 +216,7 @@ function attack() {
     // checking the health of the player
     if (health <= 0) {
         lose();
-    } else if (monsterHealth <= 0) {
-        defeatMonster();
-    }
+    } else if (monsterHealth < = 0)
 }
 
 function dodge() {
