@@ -230,9 +230,6 @@ function defeatMonster() {
     // updating the texts
     goldText.innerText = gold;
     xpText.innerText = xp;
-
-    // finally updating
-    update(locations[4]);
 }
 
 function dodge() {

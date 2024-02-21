@@ -223,17 +223,7 @@ function attack() {
 
 function lose() {}
 
-function defeatMonster() {
-    gold += Math.floor(6.7 * monsters[fighting].level);
-    xp += monsters[fighting].level;
-
-    // updating the texts
-    goldText.innerText = gold;
-    xpText.innerText = xp;
-
-    // finally updating
-    update(locations[4]);
-}
+function defeatMonster() {}
 
 function dodge() {
     text.innerText = 'You dodge the attack from the ' + monsters[fighting].name;

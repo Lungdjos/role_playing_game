@@ -232,7 +232,7 @@ function defeatMonster() {
     xpText.innerText = xp;
 
     // finally updating
-    update(locations[4]);
+    update(locations)
 }
 
 function dodge() {
