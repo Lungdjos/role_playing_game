@@ -166,7 +166,7 @@ function goCave() {
  */
 
 function update(location) {
-    monsterStats.style.display = 'none';
+    monsterStats
     // changing the text of elements
     button1.innerText = location['button text'][0];
     button2.innerText = location['button text'][1];

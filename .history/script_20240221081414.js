@@ -74,7 +74,7 @@ const locations = [{
     name: "kill monster",
     "button text": ['Go to town square', 'Go to town square', 'Go to town square'],
     "button functions": [goTown, goTown, goTown],
-    text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
+    text: 'The monster screams Arg! as it dies. You gain experience points and find gold.'
 }];
 
 // initialize buttons
@@ -166,7 +166,6 @@ function goCave() {
  */
 
 function update(location) {
-    monsterStats.style.display = 'none';
     // changing the text of elements
     button1.innerText = location['button text'][0];
     button2.innerText = location['button text'][1];
