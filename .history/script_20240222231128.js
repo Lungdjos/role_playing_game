@@ -176,7 +176,7 @@ function update(location) {
     button1.innerText = location['button text'][0];
     button2.innerText = location['button text'][1];
     button3.innerText = location['button text'][2];
-    text.innerHTML = location['text']; //or location.text
+    text.inn = location['text']; //or location.text
 
     // initializing the buttons on the next page
     button1.onclick = location['button functions'][0];
@@ -238,10 +238,6 @@ function attack() {
 
 function lose() {
     update(locations[5]);
-}
-
-function winGame() {
-    update(locations[6]);
 }
 
 function defeatMonster() {

@@ -240,9 +240,7 @@ function lose() {
     update(locations[5]);
 }
 
-function winGame() {
-    update(locations[6]);
-}
+function
 
 function defeatMonster() {
     gold += Math.floor(6.7 * monsters[fighting].level);
