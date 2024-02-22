@@ -80,11 +80,6 @@ const locations = [{
     "button text": ['REPLAY?', 'REPLAY?', 'REPLAY?'],
     "button functions": [restart, restart, restart],
     text: 'You die. &#x2620;'
-}, {
-    name: "win",
-    "button text": ['REPLAY?', 'REPLAY?', 'REPLAY?'],
-    "button functions": [restart, restart, restart],
-    text: 'You defeat the dragon! YOU WIN THE GAME! &#x1F389;'
 }];
 
 // initialize buttons
@@ -172,7 +167,7 @@ function goCave() {
 
 /**
  * update method
- * @param {*} location
+ * @param {*} location 
  */
 
 function update(location) {
@@ -220,14 +215,11 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
-/**
- * the attack method used to attack the beasts
- */
-
+// attack method and dodge methods
 function attack() {
     text.innerText = 'The ' + monsters[fighting].name + ' attacks.';
     text.innerText += ' You attack it with your ' + weapons[currentWeapon].name + '.';
-    health -= getMonsterAttackValue(monsters[fighting].level);
+    health -= monsters[fighting].level;
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     monsterHealthText.innerText = monsterHealth;
     healthText.innerText = health;
@@ -244,21 +236,9 @@ function attack() {
     }
 }
 
-/**
- * the method that gets the attack value of a monster randomly.
- */
-
-function getMonsterAttackValue(monsterLevel) {
-    const hit = (monsterLevel * 5) - (Math.floor(Math.random() * xp));
-    console.log(hit);
-    return hit;
-}
-
-// the dodge method
 function dodge() {
     text.innerText = 'You dodge the attack from the ' + monsters[fighting].name;
 }
-
 // lose method
 function lose() {
     update(locations[5]);
@@ -283,7 +263,8 @@ function defeatMonster() {
     update(locations[4]);
 }
 
-// the restart method
+
+
 function restart() {
 
     // resetting everything to default

@@ -172,7 +172,7 @@ function goCave() {
 
 /**
  * update method
- * @param {*} location
+ * @param {*} location 
  */
 
 function update(location) {
@@ -249,9 +249,7 @@ function attack() {
  */
 
 function getMonsterAttackValue(monsterLevel) {
-    const hit = (monsterLevel * 5) - (Math.floor(Math.random() * xp));
-    console.log(hit);
-    return hit;
+    return monsterLevel;
 }
 
 // the dodge method

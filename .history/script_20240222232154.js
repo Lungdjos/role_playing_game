@@ -172,7 +172,7 @@ function goCave() {
 
 /**
  * update method
- * @param {*} location
+ * @param {*} location 
  */
 
 function update(location) {
@@ -220,14 +220,11 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
-/**
- * the attack method used to attack the beasts
- */
-
+// attack method and dodge methods
 function attack() {
     text.innerText = 'The ' + monsters[fighting].name + ' attacks.';
     text.innerText += ' You attack it with your ' + weapons[currentWeapon].name + '.';
-    health -= getMonsterAttackValue(monsters[fighting].level);
+    health -= getMonsterAtta(monsters[fighting].level);
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     monsterHealthText.innerText = monsterHealth;
     healthText.innerText = health;
@@ -244,17 +241,6 @@ function attack() {
     }
 }
 
-/**
- * the method that gets the attack value of a monster randomly.
- */
-
-function getMonsterAttackValue(monsterLevel) {
-    const hit = (monsterLevel * 5) - (Math.floor(Math.random() * xp));
-    console.log(hit);
-    return hit;
-}
-
-// the dodge method
 function dodge() {
     text.innerText = 'You dodge the attack from the ' + monsters[fighting].name;
 }
