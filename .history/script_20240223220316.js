@@ -251,7 +251,7 @@ function attack() {
 function getMonsterAttackValue(monsterLevel) {
     const hit = (monsterLevel * 5) - (Math.floor(Math.random() * xp));
     console.log(hit);
-    return (hit > 0) ? hit : 0;
+    return (hit);
 }
 
 // the dodge method
