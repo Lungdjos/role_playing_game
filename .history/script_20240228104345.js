@@ -249,11 +249,6 @@ function attack() {
             defeatMonster();
         }
     }
-
-    // condition that checks if the weapon is broken or not.
-    if (Math.random() <= 0.1) {
-        text.innerText += ' Your ' + inventory.pop() + ' breaks.';
-    }
 }
 
 /**

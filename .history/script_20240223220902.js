@@ -230,12 +230,8 @@ function attack() {
     health -= getMonsterAttackValue(monsters[fighting].level);
 
     // checking for 
-    if (isMonsterHit()) {
-        monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
-    } else {
-        text.innerText += ' You miss.';
-    }
-
+    if (isMonsterHit()) {}
+    monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     monsterHealthText.innerText = monsterHealth;
     healthText.innerText = health;
 
@@ -248,11 +244,6 @@ function attack() {
         } else {
             defeatMonster();
         }
-    }
-
-    // condition that checks if the weapon is broken or not.
-    if (Math.random() <= 0.1) {
-        text.innerText += ' Your ' + inventory.pop() + ' breaks.';
     }
 }
 
@@ -311,6 +302,3 @@ function restart() {
 
     goTown();
 }
-
-// monster hit method
-function isMonsterHit() { return Math.random() > 0.2 || health < 20; }
