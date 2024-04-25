@@ -73,7 +73,7 @@ const locations = [{
 }, {
     name: "kill monster",
     "button text": ['Go to town square', 'Go to town square', 'Go to town square'],
-    "button functions": [goTown, goTown, easterEgg],
+    "button functions": [goTown, goTown, goTown],
     text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
 }, {
     name: "lose",
@@ -341,18 +341,7 @@ function pick(guess) {
     }
 
     // checking if the array contains the guessed number
-    if (numbers.includes(guess)) {
-        text.innerText += 'Right! You win 20 gold!';
-        gold += 20;
-        goldText.innerText = gold;
-    } else {
-        text.innerText += 'Wrong! You lose 10 health!';
-        health -= 10;
-        healthText.innerText = health;
-        if (health <= 0) {
-            lose();
-        }
-    }
+    if ()
 }
 
 function pickTwo() {
