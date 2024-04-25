@@ -334,7 +334,7 @@ function pick(guess) {
         // pushing numbers to the array
         numbers.push(Math.floor(Math.random() * 11));
     }
-    text.innerText = 'You picked ' + guess + '. Here are the random numbers:\n';
+    text.innerText = 'You picked ' + guess + '. Here are the random numbers:\n' + guess;
 }
 
 function pickTwo() {
